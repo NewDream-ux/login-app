@@ -1,0 +1,87 @@
+.navbar {
+    width: 100%;
+    min-height: 70px;
+    height: auto;
+    background-color: palevioletred;
+}
+
+h3 a{
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    margin: 0;
+    float: right;
+    display: flex;
+}
+
+ul li {
+    list-style-type: none;
+    margin-right: 10px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+ul li span{
+    margin: 0;
+    font-weight: 400;
+}
+
+.active, ul li a:hover{
+    border-radius: 3px;
+    padding: 5px;
+    border: 1px solid;
+}
+
+.contentArea{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.leftContentHeading{
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+.leftContentHeading img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: left;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.imageContainer{
+    text-align: center;
+}
+
+.imageContainer:hover{
+    opacity: 0.5;
+}
+
+.imageContainer:hover + .editImage{
+    display: block;
+}
+
+.editImage{
+    display: none;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: left;
+    text-align: center;
+    margin-top: -42px;
+    margin-left: 13px;
+    color: white;
+    font-weight: 600;
+}
+

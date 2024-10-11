@@ -1,0 +1,15 @@
+.product-information{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.info-label{
+    font-weight: 600;
+    margin-top: 3px;
+    font-size: 15px;
+}
+
+.info-value{
+    margin-top: 3px;
+    font-size: 14px;
+}

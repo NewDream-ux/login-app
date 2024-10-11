@@ -1,0 +1,23 @@
+.list_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.list_container span{
+    font-weight: 600;
+    font-size: 25px;
+    padding: 10px;
+}
+.data-container{
+    grid-template-columns: 50% 50%;
+    display: grid;
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.data-container img{
+    cursor: pointer;
+}

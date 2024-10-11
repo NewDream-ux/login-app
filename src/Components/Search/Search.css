@@ -1,0 +1,14 @@
+.searchContainer{
+    width: 66%;
+    margin: auto;
+}
+
+.searchContainer input {
+    float: right;
+    height: 30px;
+    width: 25%;
+    margin-top: 5px;
+    border-radius: 5px;
+    border-style: solid;
+    margin-bottom: 5px;
+}

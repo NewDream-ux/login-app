@@ -1,0 +1,29 @@
+.review-container{
+    width: 100%;
+    background-color: #d3d3d37c;
+    min-height: 100px;
+    height: auto;
+    margin-top: 5px;
+}
+
+.review-content{
+    padding: 5px;
+}
+
+.reviewName{
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.review-email{
+    font-size: 13px;
+}
+
+.review-comments{
+    font-size: 13px;
+    color: grey;
+}
+
+.review-date{
+    font-size: 13px;
+}

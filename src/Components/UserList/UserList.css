@@ -1,0 +1,48 @@
+.container{
+    width: 100%;
+    /* min-height: 1000px; */
+    height: 1000px;
+    overflow-y: scroll;
+}
+
+.card{
+    width: 70%;
+    min-height: 100px;
+    height: auto;
+    background-color: lightgray;
+    margin: 5px auto auto auto;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+}
+
+.card .col{
+    padding: 5px;
+}
+
+.card .col .label{
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.card .col .content{
+    display: block;
+}
+
+.emptyData{
+    padding: 15px;
+    text-align: center;
+    color: grey;
+    font-size: 30px;
+}
+
+.btn-col{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn-col button{
+    border-radius: 5px;
+    background-color: gray;
+}

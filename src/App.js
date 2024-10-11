@@ -1,24 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import Routing from './Routing/Routing';
+import { BrowserRouter } from 'react-router-dom';
+import { getCookie, fallbackRender } from './GlobalFunction/GlobalFunction';
+import { ONLINE } from './Constants';
+import Offline from './GlobalComponent/Offline/Offline';
+import { useEffect, useState } from 'react';
+import { ErrorBoundary } from "react-error-boundary";
+// import ErrorBoundries from './GlobalComponent/ErrorBoundries/ErrorBoundries';
 
 function App() {
+  const [online, setOnline] = useState(undefined);
+  const isOnline = getCookie(ONLINE) == "true" ? true : false;
+
+
+  useEffect(() => {
+    setOnline(isOnline);
+  }, [isOnline])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {online ?
+        <ErrorBoundary fallbackRender={fallbackRender}>
+          <BrowserRouter>
+            <Routing />
+          </BrowserRouter>
+        </ErrorBoundary>
+        :
+        <Offline />
+      }
+    </>
   );
 }
 

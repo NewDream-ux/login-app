@@ -1,0 +1,16 @@
+.starts {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.off {
+    color: lightgrey;
+}
+
+.on {
+    color: #de7921;
+}
+
+.star-value {
+    font-size: 17px;
+}
