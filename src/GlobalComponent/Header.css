@@ -85,3 +85,19 @@ ul li span{
     font-weight: 600;
 }
 
+.cartBadges{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.badgeContainer{
+    display: inline-block;
+    margin-left: 3px;
+}
+

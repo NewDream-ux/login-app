@@ -42,7 +42,8 @@ const ProductDetails = () => {
                     {discountPercentage && <div className="mrp">M.R.P.:<del>&#8377;{mrpPrice(discountPercentage, price)}</del></div>}
                     <div className="availabilityStatus">{availabilityStatus}</div>
                     <div className="returnPolicy">{returnPolicy}</div>
-                    <button className="buyNow">Buy Now</button>
+                    <button className="productDetailButton">Buy Now</button> &nbsp;
+                    <button className="productDetailButton">Add to Cart</button>
                     <hr />
                     <ProductInformation
                         brand={brand}

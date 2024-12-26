@@ -60,7 +60,8 @@
     color: #007185;
 }
 
-.buyNow{
+.productDetailButton{
+    display: inline;
     background-color: palevioletred;
     border-radius: 15px;
 }

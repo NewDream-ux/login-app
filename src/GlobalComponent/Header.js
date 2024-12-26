@@ -2,6 +2,8 @@ import { Link, NavLink } from "react-router-dom";
 import "./Header.css";
 import { deleteCookie, getCookie } from "../GlobalFunction/GlobalFunction";
 import { USER_DETAILS_COOKIE } from "../Constants";
+import { FaShoppingCart } from "react-icons/fa";
+
 
 const Header = () => {
     const userDetails = getCookie(USER_DETAILS_COOKIE);
@@ -24,6 +26,15 @@ const Header = () => {
                             <li className="menu"><NavLink to="/photos">Photo List</NavLink></li>
                         </>}
                         <li className="menu">{userDetails ? <NavLink to="/" onClick={() => deleteCookie(USER_DETAILS_COOKIE)}>Logout</NavLink> : <NavLink to="/login">Login</NavLink>}</li>
+                        <li>
+                            <FaShoppingCart />
+                            <div className="badgeContainer">
+                                <div className="cartBadges">
+                                    <p>2</p>
+                                </div>
+                            </div>
+                            </li>
+                           
                     </ul>
                 </nav>
                 <div className="editImage">A</div>

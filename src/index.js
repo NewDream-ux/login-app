@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { setCookie } from './GlobalFunction/GlobalFunction';
+import {Provider} from "react-redux";
+import store from './Redux/store';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -15,9 +17,9 @@ setCookie(onlineData);
 
 
   root.render(
-    <>
+    <Provider store={store}>
       <App />
-    </>
+    </Provider>
  ); 
 
 
